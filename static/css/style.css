@@ -1,0 +1,72 @@
+body {
+  margin: 0;
+  background:  url("http://www.solofondos.com/wp-content/uploads/2015/11/Im%C3%A1genes-de-fondo-para-sitio-web.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-size: cover;
+}
+
+.masthead {
+  margin-bottom: 50px;
+}
+
+.text-center {
+  text-align: center !important;
+}
+
+.aws span {
+  top: 10px;
+  font-size: 50pt;
+  font-weight: bold;
+  position: relative;
+  font-family: "Varela Round";
+  cursor: pointer;
+  transition: all 300ms ease-in-out;
+}
+
+.aws span:hover {
+  filter: contrast(250%);
+}
+.aws span:nth-child(1) {
+  color: #6B837E;
+}
+.aws span:nth-child(2) {
+  color: #6B8374;
+}
+.aws span:nth-child(3) {
+  color: #7B836B;
+}
+.aws span:nth-child(4) {
+  color: #837F6B;
+}
+.aws span:nth-child(5) {
+  color: #83706B;
+}
+
+table{
+    width: 50%;
+}
+table, th, td{
+    border: 1px solid black;
+}
+th, td{
+  color: white;
+  text-align: center;
+}
+img{
+  width: 250px;
+  height: 250px;
+}
+button{
+  padding: 10px 40px;
+  font-size: 16px;
+  color: white;
+  position: relative;
+  left:84%;
+  top:200%;
+  background-color:#423F3F;
+  border-radius: 40px;
+}
+
+
