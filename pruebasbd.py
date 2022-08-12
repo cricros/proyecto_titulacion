@@ -47,6 +47,9 @@ def select():
 
 
 """
+@app.route("/simpleform")
+def mami():
+    return render_template("simpleform.html") #cambiar el formato de index.hmtl
 
 @app.route("/", methods=['GET', 'POST'])
 def home():

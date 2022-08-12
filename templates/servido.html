@@ -1,0 +1,89 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+      <meta charset="utf-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+      <meta name="description" content="" />
+      <meta name="author" content="" />
+      <title>Prototipo de compatibilidad</title>
+      <link rel="icon" type="image/x-icon" href="assets/img/favicon.ico" />
+
+      <script src="https://use.fontawesome.com/releases/v5.15.1/js/all.js" crossorigin="anonymous"></script>
+
+      <link href="https://fonts.googleapis.com/css?family=Varela+Round" rel="stylesheet" />
+      <link href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet" />
+
+      <link  rel="stylesheet" href="/static/css/style.css"/>
+</head>
+<body>
+    <header class="masthead">
+        <div class="aws">
+            <div class="mx-auto text-center">
+                        <span>LAWU AI FU</span>
+                        <div class="container-fluid aws2 bg-2">
+                            <p>Con la seleccion de los videojuegos.</p>
+                            <p>El juego con mayor carga es: <u> "{{juego}}"</u> y la calidad seleccionada: <u>"{{res}}"</u> </p>
+                        </div>
+                    </div>
+    </header>
+
+    <table align="center">
+          {% for conf_pc in config_pc %}
+              <tr>
+                  <td><img src="/static/img/Procesador.png"/></td>
+                  <th>Procesador</th>
+                  <td>{{conf_pc.1}}</td>
+              </tr>
+              <tr>
+                  <td><img src="/static/img/Grafica.png"/></td>
+                  <th>Grafica</th>
+                  <td>{{conf_pc.2}}</td>
+              </tr>
+
+              <tr>
+                  <td><img src="/static/img/PlacaM.png"/></td>
+                  <th>Placa madre</th>
+                  <td>{{conf_pc.3}}</td>
+              </tr>
+              <tr>
+                  <td><img src="/static/img/Disco.png"/></td>
+                  <th>Disco</th>
+                  <td>{{conf_pc.4}}</td>
+              </tr>
+              <tr>
+                  <td><img src="/static/img/Fuente.png"/></td>
+                  <th>Fuente</th>
+                  <td>{{conf_pc.5}}</td>
+              </tr>
+              <tr>
+                  <td><img src="/static/img/RAM.png"/></td>
+                  <th>RAM</th>
+                  <td>{{conf_pc.6}}</td>
+              </tr>
+          {% endfor %}
+      </table>
+
+        <button><a id="botoncito" href="http://proyectosusanaas.pythonanywhere.com">Nueva consulta</a></button>
+    <footer class="site-footer">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-4">
+              <h6>Sobre nosotros</h6>
+              <p class="text-justify">Somos un equipo de la carrera de ingeniería en informática que se enfoco realizar un sistema para el ensamblaje de computadoras </p>
+            </div>
+          </div>
+          <hr>
+        </div>
+        <div class="container">
+          <div class="row">
+            <div class="col-md-8 col-sm-6 col-xs-12">
+              <p class="copyright-text">Copyright &copy; 2021 All Rights Reserved by
+           <a href="https://proyectosusanaas.pythonanywhere.com/simpleform">EQUIPO 8</a>.
+              </p>
+            </div>
+          </div>
+        </div>
+  </footer>
+
+</body>
+</html>
